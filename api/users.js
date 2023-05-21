@@ -9,7 +9,7 @@ usersRouter.use((req, res, next) => {
 });
 
 
-sersRouter.get('/', async (req, res, next) => {
+usersRouter.get('/', async (req, res, next) => {
     try {
         const users = await getAllUsers();
 
