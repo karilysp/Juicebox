@@ -57,7 +57,7 @@ usersRouter.post('/register', async (req, res, next) => {
     const { username, password, name, location } = req.body;
 
     try {
-        const_user = await getUserByUsername(username);
+        const _user = await getUserByUsername(username);
 
         if (_user) {
             next({
